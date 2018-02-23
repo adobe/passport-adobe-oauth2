@@ -13,12 +13,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
-//var passport = require('passport')
+/* global passport */
+/* eslint no-console:"off" */
 module.exports = {
     '/auth/adobe/login.html': {
         middleware: [ passport.authenticate('adobe', { scope: ['openid', 'AdobeID', 'creative_sdk'], response_type: 'token' }) ],
-        fn: function (req, res) {
+        fn: function ( /* req , res */ ) {
             console.log("/auth/adobe/login.html opened");
         }
     },

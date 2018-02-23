@@ -31,7 +31,7 @@ module.exports = {
             else {
                 res.render('welcome', { title: 'Welcome to Adobe', user: req.user });
             }
-	    }
+        }
     },
     '/private': {
         fn: function (req, res) {

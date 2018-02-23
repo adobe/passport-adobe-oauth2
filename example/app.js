@@ -18,15 +18,16 @@
 /**
  * Module dependencies.
  */
+
+
 var fs = require('fs');
 var express = require('express');
 var routescan = require('express-routescan');
-passport = require('passport');
+var passport = require('passport');
 
 // this is our passport strategy, which in this example 'happens' to be in the 
 // parent folder. Normally, this would look like `require('passport-adobe-oauth2')`
 var AdobeStrategy = require('..').Strategy;
-var routes = require('./routes');
 var https = require('https');
 var path = require('path');
 
@@ -37,11 +38,11 @@ var https_options = {
     rejectUnauthorized: false
 };
 
-// You should modify the following values to match your own application
+// TODO: You should modify the following values to match your own application
 var ADOBE_STRATEGY_CONFIG = {
-    clientID: "f802124f3bd54f0b860183b0a245b4c8",
-    clientSecret: "51215294-7899-4e8f-9182-c4d5223f3e73",
-    callbackURL: "https://localhost.corp.adobe.com:3000/auth/adobe/callback"
+    clientID: "Insert Adobe Client-ID (aka api_key) Here",
+    clientSecret: "Insert Adobe Client Secret Here",
+    callbackURL: "https://www.example.net:3000/auth/adobe/callback"
 };
 
 // Use the AdobeStrategy within Passport.
@@ -121,10 +122,11 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
-
 // start express-routescan.
 routescan(app);
 
-https.createServer(https_options, app).listen(app.get('port'), function () {
+https.createServer(https_options, app)
+.listen(app.get('port'), function () {
+    // eslint-disable-next-line no-console
     console.log('Express server listening on port ' + app.get('port'));
 });
