@@ -154,10 +154,13 @@ Replacing `www.example.net` with whatever redirect domain you chose. You may be 
 
 ## Credits
 
-  - [Dragos Dascalita Haut] (http://github.com/ddragosd)
+  - Dragos Dascalita Haut [@ddragosd](https://github.com/ddragosd)
+  - Audrey So [@audreyeso](https://github.com/audreyeso)
+  - Caryn Tran [@carynbear](https://github.com/carynbear)
+  - Jesse MacFadyen [@purplecabbage](https://github.com/purplecabbage)
 
   This strategy is based on Jared Hanson's GitHub strategy for passport:  
-  - [Jared Hanson](http://github.com/jaredhanson)
+  - [Jared Hanson](https://github.com/jaredhanson)
 
 ## License
 
