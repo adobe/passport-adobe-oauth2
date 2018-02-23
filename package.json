@@ -1,0 +1,56 @@
+{
+  "name": "passport-adobe-oauth2",
+  "version": "1.0.0",
+  "description": "Adobe OAuth 2.0 authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "adobe",
+    "oauth2",
+    "auth",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/passport-adobe-oauth2"
+  },
+  "bugs": {
+    "url": "https://github.com/adobe/passport-adobe-oauth2/issues"
+  },
+  "contributors" : [
+    {
+      "name":"Dragos Dascalita Haut",
+      "url":"https://github.com/ddragosd"
+    },
+    {
+      "name": "Audrey So",
+      "url": "https://github.com/audreyeso"
+    },
+    {
+      "name": "Caryn Tran",
+      "url": "https://github.com/carynbear"
+    },
+    {
+      "name": "Jesse MacFadyen",
+      "url": "https://github.com/purplecabbage"
+    }
+  ],
+  "license": "Apache-2.0",
+  "main": "./lib/passport-adobe-oauth2",
+  "dependencies": {
+    "passport-oauth": "1.0.x",
+    "pkginfo": "0.2.x"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jasmine": "^2.8.0"
+  },
+  "scripts": {
+    "test": "npm run jasmine",
+    "jasmine": "jasmine"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
