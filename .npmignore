@@ -6,6 +6,8 @@ test/
 
 node_modules
 
+.vscode/
+
 # Mac OS X
 .DS_Store
 
