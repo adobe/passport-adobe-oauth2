@@ -1,6 +1,0 @@
-extends layout
-
-block content
-  h1= title
-  p You are signed in as: #{user.displayName} , email:#{user.emails[0].value}
-  a(href="/auth/adobe/logout.html") Log Out
